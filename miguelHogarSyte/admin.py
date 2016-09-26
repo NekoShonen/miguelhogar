@@ -6,3 +6,5 @@ from .models import *
 admin.site.register(Producto)
 admin.site.register(Proveedor)
 admin.site.register(Marca)
+admin.site.register(Descuento)
+admin.site.register(Rubro)
