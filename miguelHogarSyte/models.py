@@ -41,3 +41,9 @@ class Descuento(models.Model):
 
     def __str__(self):
         return self.nombre + ' ' + str(self.valor)
+
+class Seleccionados(models.Model):
+    productos = models.ManyToManyField(Producto)
+
+    def __str__(self):
+        return "seleccionados"
